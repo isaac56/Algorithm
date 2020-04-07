@@ -18,5 +18,14 @@
     <ClCompile Include="완주하지 못한 선수.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="전화번호목록.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="위장.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="탑.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

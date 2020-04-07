@@ -139,6 +139,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="완주하지 못한 선수.cpp" />
+    <ClCompile Include="위장.cpp" />
+    <ClCompile Include="전화번호목록.cpp" />
+    <ClCompile Include="탑.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
