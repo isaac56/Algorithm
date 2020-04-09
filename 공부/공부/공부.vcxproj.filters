@@ -27,5 +27,8 @@
     <ClCompile Include="탑.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="베스트앨범.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
