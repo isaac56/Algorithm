@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="다리를지나는트럭.cpp" />
     <ClCompile Include="베스트앨범.cpp" />
     <ClCompile Include="완주하지 못한 선수.cpp" />
     <ClCompile Include="위장.cpp" />

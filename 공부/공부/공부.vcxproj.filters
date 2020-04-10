@@ -30,5 +30,8 @@
     <ClCompile Include="베스트앨범.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="다리를지나는트럭.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
