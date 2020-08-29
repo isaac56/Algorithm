@@ -54,5 +54,14 @@
     <ClCompile Include="K번째수.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="가장 큰 수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H-Index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="모의고사.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
