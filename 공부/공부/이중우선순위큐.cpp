@@ -39,7 +39,6 @@ vector<int> solution(vector<string> operations) {
     //        cout << *iter << endl;
     //    }
     //}
-
     multiset<int>::iterator iter;
     if (ms.size() == 0) {
         answer.push_back(0);

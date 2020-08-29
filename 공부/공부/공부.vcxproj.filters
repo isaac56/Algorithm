@@ -51,5 +51,8 @@
     <ClCompile Include="이중우선순위큐.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="K번째수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
