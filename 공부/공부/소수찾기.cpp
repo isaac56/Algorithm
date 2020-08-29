@@ -34,7 +34,7 @@ int solution(string numbers) {
     for (set<int>::iterator iter = candi.begin(); iter != candi.end(); iter++) {
         if (isPrime(*iter)) {
             answer++;
-        }
+        } 
     }
 
     return answer;
