@@ -33,64 +33,57 @@
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
-#include <set>
+#include <iostream>
 
 using namespace std;
 
-vector<string> genres;
-vector<int> plays;
-unordered_map<string, int> genreNum;
-unordered_map<string, vector<int>> genreMusic;
-vector<string> genreNames;
-
-bool compMusic(int i, int j) {
-    if (plays[i] == plays[j]) {
-        return i < j;
-    }
-    else {
-        return plays[i] > plays[j];
-    }
+bool compare(pair<string, int> p1, pair<string, int> p2) {
+    return p1.second > p2.second;
 }
 
-bool compGenre(string a, string b) {
-    return genreNum[a] > genreNum[b];
-}
-
-vector<int> solution(vector<string> gen, vector<int> pl) {
+vector<int> solution(vector<string> genres, vector<int> plays) {
     vector<int> answer;
-
-    genres = gen;
-    plays = pl;
+    unordered_map<string, int> totalNum;
+    unordered_map<string, int> first;
+    unordered_map<string, int> second;
 
     for (int i = 0; i < genres.size(); i++) {
-        if (genreNum.find(genres[i]) == genreNum.end()) {
-            genreNum[genres[i]] = plays[i];
-            genreMusic[genres[i]] = vector<int>(0);
-            genreMusic[genres[i]].push_back(i);
+        string genre = genres[i];
+        int playNum = plays[i];
+        totalNum[genre] += playNum;
+        if (first.find(genre) == first.end()) {
+            first[genre] = i;
         }
         else {
-            genreNum[genres[i]] += plays[i];
-            genreMusic[genres[i]].push_back(i);
+            int f = first[genre];
+            if (playNum > plays[f])
+            {
+                second[genre] = f;
+                first[genre] = i;
+            }
+            else {
+                if (second.find(genre) == second.end()) {
+                    second[genre] = i;
+                }
+                else {
+                    int s = second[genre];
+                    if (playNum > plays[s]) {
+                        second[genre] = i;
+                    }
+                }
+            }
         }
     }
 
-    for (pair<string, vector<int>> p : genreMusic) {
-        genreNames.push_back(p.first);
-    }
+    vector<pair<string, int>> genreInfo = vector<pair<string,int>>(totalNum.begin(), totalNum.end());
+    sort(genreInfo.begin(), genreInfo.end(), compare);
 
-    sort(genreNames.begin(), genreNames.end(), compGenre);
-
-    for (string s : genreNames) {
-        sort(genreMusic[s].begin(), genreMusic[s].end(), compMusic);
-        if (genreMusic[s].size() >= 2) {
-            answer.push_back(genreMusic[s][0]);
-            answer.push_back(genreMusic[s][1]);
-        }
-        else {
-            answer.push_back(genreMusic[s][0]);
+    for (pair<string, int> p : genreInfo) {
+        answer.push_back(first[p.first]);
+        if (second.find(p.first) != second.end()) {
+            answer.push_back(second[p.first]);
         }
     }
-
 
     return answer;
 }

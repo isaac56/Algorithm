@@ -33,5 +33,14 @@
     <ClCompile Include="다리를지나는트럭.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="주식가격.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="기능개발.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="프린터.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
