@@ -63,5 +63,26 @@
     <ClCompile Include="모의고사.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="소수찾기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="카펫.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="타겟 넘버.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="단어 변환.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="여행경로.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="여행경로(재귀).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
